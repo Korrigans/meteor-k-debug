@@ -1,7 +1,10 @@
 Package.describe({
   name: 'korrigans:k-debug',
   version: '0.1.0',
-  git: 'https://github.com/Korrigans/meteor-k-debug.git'
+  debugOnly: true,
+  git: 'https://github.com/Korrigans/meteor-k-debug.git',
+  summary: 'Define a debug only variable. By itself this package does nothing.',
+  documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
