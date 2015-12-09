@@ -1,8 +1,8 @@
-describe('[k-debug][Unit] K.Debug', () => {
+describe('[k-debug][Unit] K.debug', () => {
   it('should be defined and equal true', () => {
     const
       expected = true,
-      actual = K.Debug;
+      actual = K.debug;
     expect(actual).toEqual(expected);
   });
 });
