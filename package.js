@@ -1,13 +1,13 @@
 Package.describe({
   name: 'korrigans:k-debug',
-  version: '0.1.0',
+  version: '0.1.1',
   debugOnly: true,
   git: 'https://github.com/Korrigans/meteor-k-debug.git',
   summary: 'Define a debug only variable. By itself this package does nothing.',
   documentation: 'README.md'
 });
 
-Package.onUse(function(api) {
+Package.onUse(function onUse(api) {
   api.versionsFrom('1.2.1');
 
   api.use([
@@ -20,7 +20,7 @@ Package.onUse(function(api) {
   api.addFiles('k-debug.js');
 });
 
-Package.onTest(function(api) {
+Package.onTest(function onTest(api) {
   api.use([
     'ecmascript',
     'sanjo:jasmine@0.20.2',
@@ -30,5 +30,5 @@ Package.onTest(function(api) {
   //Console tests convenience
   api.imply('korrigans:k');
 
-  api.addFiles('k-debug-tests.js');
+  api.addFiles('tests/k-debug.js');
 });
