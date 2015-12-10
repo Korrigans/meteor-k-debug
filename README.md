@@ -1,4 +1,4 @@
-# meteor-k
+# meteor-k-debug
 
 *koriggans:k-debug*
 
